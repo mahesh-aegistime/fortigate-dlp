@@ -1,3 +1,16 @@
+## Important Warning
+Before applying any configuration:
+
+- Take a full FortiGate backup
+- Test in a lab environment first
+- Validate regex patterns before production deployment
+- Use monitor mode before enabling block/quarantine actions
+- Review firewall policies after applying DLP sensors
+- Incorrect DLP configuration may impact production traffic
+
+## Backup Recommendation
+
+Always take a full FortiGate configuration backup before importing or modifying DLP settings.
 # FortiGate Advanced DLP Rules
 
 Custom FortiGate DLP dictionaries, regex patterns, and sensors for detecting sensitive Indian identity data and medical/hospital information.
