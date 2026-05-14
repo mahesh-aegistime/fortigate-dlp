@@ -57,3 +57,7 @@ Modify keywords, regex patterns, and DLP dictionaries according to:
 ## Supported Platforms
 
 - FortiGate 7.4.x
+
+##Setup
+copy paste DLP dictionary 1st in fortigate, 2nd DLP sensor , 3rd DLP-Profile.
+To scan https content enable Fortigate Full sll inspection in fortigate firewall rule and install fortigate CA certificate in Client PC.
