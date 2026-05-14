@@ -1,5 +1,5 @@
-#Open fortigate CLI and past below cmd. This will add keyword dictionary to fortigate.
-#change keyword as per requirement. for example : edit "patient" and set pattern "patient" change to edit "finance" and set pattern "finance" will match word finance.
+## Open fortigate CLI and past below cmd. This will add keyword dictionary to fortigate.
+## change keyword as per requirement. for example : edit "patient" and set pattern "patient" change to edit "finance" and set pattern "finance" will match word finance.
 
 config dlp dictionary
     edit "patient"
