@@ -14,6 +14,17 @@ Always take a full FortiGate configuration backup before importing or modifying 
 # FortiGate Advanced DLP Rules
 
 Custom FortiGate DLP dictionaries, regex patterns, and sensors for detecting sensitive Indian identity data and medical/hospital information.
+Examples:
+- Aadhaar Number
+- PAN Number
+- Voter ID / EPIC Number
+
+Modify keywords, regex patterns, and DLP dictionaries according to:
+- Your organization requirements
+- Compliance standards
+- Customer environment
+- Security policies
+- Regional regulations
 
 ## Features
 - Aadhaar Number Detection
