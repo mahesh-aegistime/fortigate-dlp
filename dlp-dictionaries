@@ -1,0 +1,210 @@
+#Open fortigate CLI and past below cmd. This will add keyword dictionary to fortigate.
+
+config dlp dictionary
+    edit "patient"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "patient"
+                set ignore-case enable
+            next
+        end
+    next
+
+    edit "doctor"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "doctor"
+                set ignore-case enable
+            next
+        end
+    next
+
+    edit "prescription"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "prescription"
+                set ignore-case enable
+            next
+        end
+    next 
+
+    edit "diagnosis"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "diagnosis"
+                set ignore-case enable
+            next
+        end
+    next
+
+    edit "medical-report"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "medical report"
+                set ignore-case enable
+            next
+            edit 2
+                set type "keyword"
+                set pattern "medical-report"
+                set ignore-case enable
+            next
+        end
+    next
+
+    edit "clinical-notes"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "clinical notes"
+                set ignore-case enable
+            next
+            edit 2
+                set type "keyword"
+                set pattern "clinical-notes"
+                set ignore-case enable
+            next
+        end
+    next
+
+    edit "lab-report"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "lab report"
+                set ignore-case enable
+            next
+            edit 2
+                set type "keyword"
+                set pattern "lab-report"
+                set ignore-case enable
+            next
+        end
+    next
+
+    edit "discharge-summary"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "discharge summary"
+                set ignore-case enable
+            next
+            edit 2
+                set type "keyword"
+                set pattern "discharge-summary"
+                set ignore-case enable
+            next
+        end
+    next
+
+    edit "treatment-plan"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "treatment plan"
+                set ignore-case enable
+            next
+            edit 2
+                set type "keyword"
+                set pattern "treatment-plan"
+                set ignore-case enable
+            next
+        end
+    next
+
+    edit "patient-history"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "patient history"
+                set ignore-case enable
+            next
+            edit 2
+                set type "keyword"
+                set pattern "patient-history"
+                set ignore-case enable
+            next
+        end
+    next
+
+    edit "scan-report"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "scan report"
+                set ignore-case enable
+            next
+            edit 2
+                set type "keyword"
+                set pattern "scan-report"
+                set ignore-case enable
+            next
+        end
+    next
+
+    edit "surgery-report"
+        config entries
+            edit 1
+                set type "keyword"
+                set pattern "surgery report"
+                set ignore-case enable
+            next
+            edit 2
+                set type "keyword"
+                set pattern "surgery-report"
+                set ignore-case enable
+            next
+        end
+    next
+
+    edit "Indian Aadhaar number"
+        config entries
+            edit 1
+                set type "regex"
+                set pattern "\\b[2-9]{1}[0-9]{3}\\s?[0-9]{4}\\s?[0-9]{4}\\b"
+            next
+            edit 2
+                set type "regex"
+                set pattern "\\b[2-9]{1}[0-9]{3}\\s[0-9]{4}\\s[0-9]{4}\\b"
+            next
+            edit 3
+                set type "regex"
+                set pattern "\\b[2-9][0-9]{11}\\b"
+            next
+        end
+    next
+
+    edit "Indian Pan"
+        config entries
+            edit 1
+                set type "regex"
+                set pattern "\\b[A-Z]{5}[0-9]{4}[A-Z]{1}\\b"
+            next
+            edit 2
+                set type "regex"
+                set pattern "\\b[a-zA-Z]{5}[0-9]{4}[a-zA-Z]{1}\\b"
+            next
+        end
+    next
+
+    edit "Indian Voter ID"
+        config entries
+            edit 1
+                set type "regex"
+                set pattern "\\b[A-Z]{3}[0-9]{7}\\b"
+            next
+            edit 2
+                set type "regex"
+                set pattern "\\b[a-zA-Z]{3}[0-9]{7}\\b"
+            next
+            edit 3
+                set type "regex"
+                set pattern "\\b[A-Z]{3}[- ]?[0-9]{7}\\b"
+            next
+        end
+    next
+end
