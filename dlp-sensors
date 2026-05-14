@@ -1,0 +1,110 @@
+#Open fortigate CLI and past below cmd. This will add keyword sensor to fortigate.
+#change keyword as per requirement. for example : edit "patient" and set dictionary "patient" change to edit "finance" and set dictionary "finance" will match word finance.
+
+config dlp sensor
+    edit "patient"
+        config entries
+            edit 1
+                set dictionary "patient"
+            next
+        end
+    next
+    edit "clinical-notes"
+        config entries
+            edit 1
+                set dictionary "clinical-notes"
+            next
+        end
+    next
+    edit "diagnosis"
+        config entries
+            edit 1
+                set dictionary "diagnosis"
+            next
+        end
+    next
+    edit "discharge-summary"
+        config entries
+            edit 1
+                set dictionary "discharge-summary"
+            next
+        end
+    next
+    edit "doctor"
+        config entries
+            edit 1
+                set dictionary "doctor"
+            next
+        end
+    next
+    edit "Indian Aadhaar number"
+        config entries
+            edit 1
+                set dictionary "Indian Aadhaar number"
+            next
+        end
+    next
+    edit "Indian Pan"
+        config entries
+            edit 1
+                set dictionary "Indian Pan"
+            next
+        end
+    next
+    edit "Indian Voter ID"
+        config entries
+            edit 1
+                set dictionary "Indian Voter ID"
+            next
+        end
+    next
+    edit "lab-report"
+        config entries
+            edit 1
+                set dictionary "lab-report"
+            next
+        end
+    next
+    edit "medical-report"
+        config entries
+            edit 1
+                set dictionary "medical-report"
+            next
+        end
+    next
+    edit "patient-history"
+        config entries
+            edit 1
+                set dictionary "patient-history"
+            next
+        end
+    next
+    edit "prescription"
+        config entries
+            edit 1
+                set dictionary "prescription"
+            next
+        end
+    next
+    edit "scan-report"
+        config entries
+            edit 1
+                set dictionary "scan-report"
+            next
+        end
+    next
+    edit "surgery-report"
+        config entries
+            edit 1
+                set dictionary "surgery-report"
+            next
+        end
+    next
+    edit "treatment-plan"
+        config entries
+            edit 1
+                set dictionary "treatment-plan"
+            next
+        end
+    next
+end
