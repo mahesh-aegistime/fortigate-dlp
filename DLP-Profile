@@ -1,0 +1,20 @@
+#Create DLP rule with dictionary and sensor to match keywor and protocl.
+#Note If you have already an DLP profile replace edit "DLP-Profile" with your profile name to add this rule to existing dlp profile.
+#copy paste below cmd to Fortigate CLI
+
+config dlp profile
+    edit "DLP-Profile"
+        set feature-set proxy
+        config rule
+            edit 0
+                set name "DLP-Keyword"
+                set severity high
+                set type message
+                set proto smtp pop3 imap http-post nntp mapi
+                set filter-by sensor
+                set sensor "clinical-notes" "diagnosis" "discharge-summary" "doctor" "Indian Aadhaar number" "Indian Pan" "Indian Voter ID" "lab-report" "medical-report" "patient" "patient-history" "prescription" "scan-report" "surgery-report" "treatment-plan"
+                set action log-only
+            next
+        end
+    next
+end
